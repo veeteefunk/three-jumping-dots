@@ -1,0 +1,41 @@
+body {
+  background-color: #1f3055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.loading {
+  display: flex;
+  transition: opacity 0.3s ease-in;
+}
+
+.circle {
+  background-color: rgb(223, 211, 211);
+  border-radius: 50%;
+  margin: 4px;
+  height: 35px;
+  width: 35px;
+  animation: jump 0.7s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.circle:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
