@@ -1,5 +1,5 @@
 body {
-  background-color: #1f3055;
+  background-color: #353b48;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,33 +9,31 @@ body {
 
 .loading {
   display: flex;
-  transition: opacity 0.3s ease-in;
 }
 
 .circle {
-  background-color: rgb(223, 211, 211);
+  background-color: #fff;
   border-radius: 50%;
-  margin: 4px;
-  height: 35px;
-  width: 35px;
-  animation: jump 0.7s ease-in infinite;
+  margin: 3px;
+  width: 10px;
+  height: 10px;
+  animation: jump 0.5s ease-in infinite;
 }
 
-.circle:nth-of-type(2) {
+.circle:nth-child(2) {
   animation-delay: 0.1s;
 }
 
-.circle:nth-of-type(3) {
+.circle:nth-child(3) {
   animation-delay: 0.2s;
 }
 
 @keyframes jump {
-  0%,
-  100% {
+  0% {
     transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
